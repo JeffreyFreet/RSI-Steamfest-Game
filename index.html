@@ -6,32 +6,21 @@
     <title>Unity WebGL Player | Death Race</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/RSIBuild.json", {onProgress: UnityProgress});
     </script>
-    <style>
-      .webgl-content {
-        position: relative !important;
-      }
-    </style>
   </head>
   <body>
-    <div class="row">
-      <div class="col-xs-3">random crap</div>
-      <div class="col-xs-6">
-        <div class="webgl-content">
-          <div id="unityContainer" style="width: 1024px; height: 768px"></div>
-          <div class="footer">
-            <div class="webgl-logo"></div>
-            <!--<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>-->
-            <div class="title">RSI STEAMfest</div>
-          </div>
-        </div>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 1024px; height: 768px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <!--<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>-->
+        <div class="title">RSI STEAMfest</div>
       </div>
-      <div class="col-xs-3">random crap</div>
-    </div>    
+    </div>
+  </div>  
   </body>
 </html>
